@@ -21,11 +21,11 @@
              {
               var weather_data = data.split(/\r?\n|\r/);
               var table_data = '<table class="table table-bordered table-striped">';
-              for(var count = 0; count<weather_data.length; count++)
+              for(var count = 0; count<weather_data.length-1; count++)
               {
                var cell_data = weather_data[count].split(",");
                table_data += '<tr>';
-               for(var cell_count=0; cell_count<(cell_data.length-1); cell_count++)
+               for(var cell_count=0; cell_count<(cell_data.length); cell_count++)
                {
                 if(count === 0)
                 {
@@ -33,7 +33,7 @@
                     table_data += '<thead class="thead-dark">';
                   }
                   table_data += '<th>'+cell_data[cell_count]+'</th>';
-                  if(cell_count == (cell_data.length-2)) {
+                  if(cell_count == (cell_data.length-1)) {
                     table_data += '</thead>';
                   }
                 }
