@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Visualization Dashboard</title>
+	
+	<link href="../Resources/styles/styles.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<!-- Loading Navigation bar to the page from header.html-->
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+	</script> 
+	
+</head>
+
+<body>
+<div id="header"></div>
+<!-- Content Section -->
+<div class="content">
+		<div class="container" id="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="box">
+						<div class="header">
+							<h2 class="headings">Comparison: Latitude vs X</h2>
+							<hr>
+						</div>
+						<div class="main-content">
+							<p>
+								Click any plot to get an in-depth analysis.
+							</p>
+
+							<div class="content-fluid">
+								<div>
+									<div class="row padding">
+										<div class="col-md-6 col-sm-12">
+                                            <h5 class="headings text-center">vs. Max Temperature</h5>
+											<a href="max_temperature.html"><img src="../Resources/assets/images/Fig1.png" class="img-fluid" id="img-comp" alt="Max Temperature" ></a>
+										</div>
+										<div class="col-md-6 col-sm-12">
+                                            <h5 class="headings text-center">vs. Humidity</h5>
+											<a href="humidity.html"><img src="../Resources/assets/images/Fig2.png" class="img-fluid" id="img-comp" alt="Humidity"></a>
+										</div>
+										<div class="col-md-6 col-sm-12">
+                                            <h5 class="headings text-center">vs. Cloudiness</h5>
+											<a href="cloudiness.html"><img src="../Resources/assets/images/Fig3.png" class="img-fluid" id="img-comp"  alt="Cloudiness"></a>
+										</div>
+										<div class="col-md-6 col-sm-12">
+                                            <h5 class="headings text-center">vs. Wind Speed</h5>
+											<a href="wind_speed.html"><img src="../Resources/assets/images/Fig4.png" class="img-fluid" id="img-comp"  alt="Wind Speed"></a>
+										</div>
+	
+									</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+
