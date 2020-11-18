@@ -1,6 +1,17 @@
 body {
     background-color: #cacaca;
 }
+
+p {
+    font-size: medium;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
 .content {
     background-color:#cacaca;
     height: 100%;
@@ -12,7 +23,13 @@ body {
     padding-top:5%;
 }
 
+.row {
+    padding: 5px;
+}
+
 .box{
+    position: sticky;
+    top: 75px;
     background-color: #ffffff;
     padding: 20px 10px 20px 10px;
     margin-left: -2%;
@@ -21,10 +38,6 @@ body {
 
 .headings {
     color: #289c95;
-}
-
-p {
-    font-size: medium;
 }
 
 .col-md-6 {
@@ -78,11 +91,13 @@ p {
 }
 
 
+
 @media (max-width: 767px) {
     #navbar-container {
         background-color: #289c95;
     }
-}
+
+  }
 
 
 /* Data Page */
@@ -97,6 +112,11 @@ p {
     border-style: solid;
     border: 1;
     border-color: darkgray;
+}
+
+th {
+    position: sticky;
+    top: -1px;
 }
 
 td {

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Web Visualization Dashboard</title>
+	<title>Latitude vs Wind Speed</title>
 	
 	<link href="../Resources/styles/styles.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,7 +15,13 @@
 	  $("#sidebar").load("sidebar.html");
     });
 	</script> 
-	
+	<style>
+		#wind-speed {
+			border-color: #289c95;
+			border-style: solid;
+			border-width: 2px;
+		}
+   </style>		
 </head>
 
 <body>
@@ -32,10 +38,23 @@
 						</div>
 						<div class="main-content">
 							<img src="../Resources/assets/images/Fig4.png" class="float-left" alt="Max Temperature" width="100%">
+							<p class="text-justify">
+								With our current analysis, there is no obvious relationship between latitude and wind speed, 
+								so further analysis is needed. It is easy to see that there may be some correlation;
+								as we can notice that a much larger number of cities in the northern hemisphere report over 20 mph of wind.
+							</p>
+							<br>
+							<hr>
+							<br>
+							<h5 class="headings text-center">Analysing Northern Hemisphere and Southern Hemisphere Separately</h5>
+							<img src="../Resources/assets/images/Wind_vs_Lat_North.png" class="float-left" alt="Max Temperature" width="100%">
 							<p>
-								As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
-								More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. 
-								This may be due to the tilt of the earth at the time of the year this data was gathered.
+								In this analysis, there is no strong correlation between Latitude and Wind Speed in the northern hemisphere.
+							</p>
+							<br>
+							<img src="../Resources/assets/images/Wind_vs_Lat_South.png" class="float-left" alt="Max Temperature" width="100%">
+							<p class="text-justify">
+								There is no strong correlation between Latitude and Wind Speed in the southern hemisphere either.
 							</p>
 						</div>
 					</div>

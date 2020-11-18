@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Web Visualization Dashboard</title>
+	<title>Latitude vs Max Temperature</title>
 	
 	<link href="../Resources/styles/styles.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,7 +15,13 @@
 	  $("#sidebar").load("sidebar.html");
     });
 	</script> 
-	
+	<style>
+		#max-heat {
+			border-color: #289c95;
+			border-style: solid;
+			border-width: 2px;
+		}
+   </style>		
 </head>
 
 <body>
@@ -32,10 +38,25 @@
 						</div>
 						<div class="main-content">
 							<img src="../Resources/assets/images/Fig1.png" class="float-left" alt="Max Temperature" width="100%">
-							<p>
+							<p class="text-justify">
 								As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
 								More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. 
 								This may be due to the tilt of the earth at the time of the year this data was gathered.
+							</p>
+							<br>
+							<hr>
+							<br>
+							<h5 class="headings text-center">Analysing Northern Hemisphere and Southern Hemisphere Separately</h5>
+							<img src="../Resources/assets/images/Temp_vs_Lat_North.png" class="float-left" alt="Max Temperature" width="100%">
+							<p class="text-justify">
+								In northern hemisphere, as Latitude increases, Maximum Temperature decreases. There is a strong negative correlation.
+								Max Temperature is high towards the equator (0 Deg Latitude).
+							</p>
+							<br>
+							<img src="../Resources/assets/images/Temp_vs_Lat_South.png" class="float-left" alt="Max Temperature" width="100%">
+							<p class="text-justify">
+								In northern hemisphere, as Latitude increases, Maximum Temperature increases. There is a strong positive correlation. 
+								Max Temperature is high towards the equator (0 Deg Latitude).
 							</p>
 						</div>
 					</div>

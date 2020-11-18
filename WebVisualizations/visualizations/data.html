@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Web Visualization Dashboard</title>
+	<title>Cities Weather Data</title>
 	
 	<link href="../Resources/styles/styles.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -29,7 +29,13 @@
                {
                 if(count === 0)
                 {
-                 table_data += '<th>'+cell_data[cell_count]+'</th>';
+                  if(cell_count == 0) {
+                    table_data += '<thead class="thead-dark">';
+                  }
+                  table_data += '<th>'+cell_data[cell_count]+'</th>';
+                  if(cell_count == (cell_data.length-2)) {
+                    table_data += '</thead>';
+                  }
                 }
                 else
                 {
