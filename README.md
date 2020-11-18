@@ -1,4 +1,4 @@
-[Weather Web Visualization Dashboard](https://cicilygeorge.github.io/Web-Design-Challenge//WebVisualizations/visualizations/index.html)
+# [Weather Web Visualization Dashboard](https://cicilygeorge.github.io/Web-Design-Challenge//WebVisualizations/visualizations/index.html)
 
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
